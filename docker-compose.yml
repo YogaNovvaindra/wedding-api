@@ -9,16 +9,6 @@ services:
       - db
     networks:
       - undangan
-    environment:
-      BASEURL: http://localhost:8080
-      DB_CONNECTION: mysql
-      DB_HOST: mariadb
-      DB_PORT: 3306
-      DB_DATABASE: wedding
-      DB_USERNAME: root
-      DB_PASSWORD: 
-      TIMEZONE: Asia/Jakarta
-      JWT_KEY: secret
 
 #   db:
 #     image: postgres:latest
@@ -41,16 +31,6 @@ services:
       - undangan
     depends_on:
       - app
-    environment:
-      BASEURL: http://localhost:8080
-      DB_CONNECTION: mysql
-      DB_HOST: mariadb
-      DB_PORT: 3306
-      DB_DATABASE: wedding
-      DB_USERNAME: root
-      DB_PASSWORD: 
-      TIMEZONE: Asia/Jakarta
-      JWT_KEY: secret
     restart: unless-stopped
 
 # volumes:
