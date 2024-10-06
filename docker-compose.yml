@@ -10,6 +10,7 @@ services:
     networks:
       - undangan
     environment:
+      BASEURL: http://localhost:8080
       DB_CONNECTION: mysql
       DB_HOST: mariadb
       DB_PORT: 3306

@@ -12,6 +12,7 @@ RUN docker-php-ext-enable pdo zip pdo_pgsql pgsql opcache
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+COPY .env.example /var/www/.env
 COPY . /var/www
 WORKDIR /var/www
 
