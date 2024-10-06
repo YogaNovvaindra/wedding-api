@@ -18,6 +18,7 @@ services:
       DB_USERNAME: root
       DB_PASSWORD: 
       TIMEZONE: Asia/Jakarta
+      JWT_KEY: secret
 
 #   db:
 #     image: postgres:latest
@@ -49,6 +50,7 @@ services:
       DB_USERNAME: root
       DB_PASSWORD: 
       TIMEZONE: Asia/Jakarta
+      JWT_KEY: secret
     restart: unless-stopped
 
 # volumes:
